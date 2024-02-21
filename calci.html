@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Calculator</title>
+  <link rel="stylesheet" href="calci.css">
+</head>
+<body>
+  <div id="layout">
+    <input type="text" id="display">
+  <div class="button_box">
+    <button class="button" onclick="displaycontent='';document.querySelector('#display').value=displaycontent;">C</button>
+
+    <button class="button" onclick="displaycontent=displaycontent+'1';document.querySelector('#display').value=displaycontent;">1</button>
+
+    <button class="button" onclick="displaycontent=displaycontent+'2';document.querySelector('#display').value=displaycontent;">2</button>
+
+    <button class="button" onclick="displaycontent=displaycontent+'+';document.querySelector('#display').value=displaycontent;">+</button>
+
+    <button class="button" onclick="displaycontent=displaycontent+'3';document.querySelector('#display').value=displaycontent;">3</button>
+
+    <button class="button" onclick="displaycontent=displaycontent+'4';document.querySelector('#display').value=displaycontent;">4</button>
+
+    <button class="button" onclick="displaycontent=displaycontent+'-';document.querySelector('#display').value=displaycontent;">-</button>
+
+    <button class="button" onclick="displaycontent=displaycontent+'5';document.querySelector('#display').value=displaycontent;">5</button>
+
+    <button class="button" onclick="displaycontent=displaycontent+'6';document.querySelector('#display').value=displaycontent;">6</button>
+
+    <button class="button" onclick="displaycontent=displaycontent+'*';document.querySelector('#display').value=displaycontent;">*</button>
+
+    <button class="button" onclick="displaycontent=displaycontent+'7';document.querySelector('#display').value=displaycontent;">7</button>
+
+    <button class="button" onclick="displaycontent=displaycontent+'8';document.querySelector('#display').value=displaycontent;">8</button>
+
+    <button class="button" onclick="displaycontent=displaycontent+'/';document.querySelector('#display').value=displaycontent;">/</button>
+
+    <button class="button" onclick="displaycontent=eval(displaycontent);document.querySelector('#display').value=displaycontent;">=</button>
+
+    <button class="button" onclick="displaycontent=displaycontent+'9';document.querySelector('#display').value=displaycontent;">9</button>
+
+    <button class="button" onclick="displaycontent=displaycontent+'0';document.querySelector('#display').value=displaycontent;">0</button>
+
+    <button class="button" onclick="displaycontent=displaycontent+'.';document.querySelector('#display').value=displaycontent;">.</button>
+    
+    <button class="button" onclick="let numstr=displaycontent.split('');numstr.pop();res=numstr.join('');displaycontent=res;document.querySelector('#display').value=displaycontent;">#</button>
+  </div>
+  </div>
+  <h1 id="name">CALCULATOR</h1>
+  <script>
+    let displaycontent='';
+    document.querySelector('#display').value=displaycontent;
+  </script>
+</body>
+</html>

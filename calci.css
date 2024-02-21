@@ -1,0 +1,29 @@
+#layout{
+  border: 1px solid rgb(57, 54, 54);
+  border-radius: 5px;
+  width: 300px;
+  margin: 10px 600px;
+  background-color: aqua;
+}
+#display{
+  width: 85%;
+  margin: 15px 22px;
+  font-size: 80px;
+  border-radius: 5px;
+}
+.button_box{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.button{
+  width: 80px;
+  height: 80px;
+  margin: 3px;
+  font-style: italic;
+  font-size: 30px;
+  background-color: pink;
+}
+#name{
+ margin: 5px 640px;
+}
